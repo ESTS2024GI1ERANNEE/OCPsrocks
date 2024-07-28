@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $_SESSION['name'] = $user;
         $_SESSION['id_admin'] = $id_admin; // Stockage de l'identifiant dans la session
-        header("Location: signout.html");
+        header("Location: signout.php");
         exit;
     } else {
         echo "Invalid username or password.";
